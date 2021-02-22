@@ -84,4 +84,35 @@ body {
 
 /* Button 3 */
 
+.btn.btn-background-circle::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #16e0bd;
+	z-index: -1;
+	border-radius: 50%;
+	transform: scale(1.5);
+	transition: transform 400ms ease-in-out;
+}
+
+.btn.btn-background-circle:hover::before,
+.btn.btn-background-circle:focus::before {
+	transform: scale(0);
+}
+
+.btn.btn-background-circle {
+	background-color: #fff;
+	z-index: 1;
+	overflow: hidden;
+	transition: color 400ms ease-in-out;
+}
+
+.btn.btn-background-circle:hover,
+.btn.btn-background-circle:focus {
+	color: #00967d;
+}
+
 /* Button 4 */
