@@ -116,3 +116,20 @@ body {
 }
 
 /* Button 4 */
+
+.btn.btn-border-underline::before {
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 7px;
+	background-color: #fff;
+	transform: scaleX(0);
+	transition: transform 250ms ease-in-out;
+}
+
+.btn.btn-border-underline:hover::before,
+.btn.btn-border-underline:focus::before {
+	transform: scaleX(1);
+}
